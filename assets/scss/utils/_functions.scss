@@ -1,0 +1,53 @@
+$max: 20;
+// 80px
+
+@for $i from 0 through $max {
+
+  .p-#{$i} {
+    padding: $i * 4px;
+  }
+
+  .py-#{$i} {
+    padding-top: $i * 4px;
+    padding-bottom: $i * 4px;
+  }
+
+  .px-#{$i} {
+    padding-left: $i * 4px;
+    padding-right: $i * 4px;
+  }
+
+  .pt-#{$i} {
+    padding-top: $i * 4px;
+  }
+
+  .pr-#{$i} {
+    padding-right: $i * 4px;
+  }
+
+  .pb-#{$i} {
+    padding-bottom: $i * 4px;
+  }
+
+  .pl-#{$i} {
+    padding-left: $i * 4px;
+  }
+
+  // end of padding
+
+  .mr-#{$i} {
+    margin-right: $i * 4px;
+  }
+
+  .mb-#{$i} {
+    margin-bottom: $i * 4px;
+  }
+
+  // end of margin
+
+  .gap-#{$i} {
+    gap: $i * 4px;
+  }
+
+  // end of gap
+}
