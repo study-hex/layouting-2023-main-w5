@@ -10,15 +10,28 @@
   width: 100%;
 }
 
+
 .mt-auto {
   margin-top: auto;
 }
 
 
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
 .fixed {
   position: fixed;
 }
 
+
+.block {
+  display: block;
+}
 
 .inline-flex {
   display: inline-flex;
