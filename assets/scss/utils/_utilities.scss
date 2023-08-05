@@ -1,3 +1,25 @@
+.h-screen {
+  height: 100vh;
+}
+
+.w-fit {
+  width: fit-content;
+}
+
+.mt-auto {
+  margin-top: auto;
+}
+
+
+.fixed {
+  position: fixed;
+}
+
+
+.inline-flex {
+  display: inline-flex;
+}
+
 .flex {
   display: flex;
 }
@@ -16,6 +38,15 @@
 
 .align-center {
   align-items: center;
+}
+
+
+.list-none {
+  list-style-type: none;
+}
+
+.object-cover {
+  object-fit: cover;
 }
 
 // end of utilities

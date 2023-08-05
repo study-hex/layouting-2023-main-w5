@@ -7,4 +7,13 @@
   color: $--color-gray-600;
 }
 
+
+.active {
+  padding-left: 29px;
+  margin-left: -32px;
+
+  color: $--color-primary;
+  border-left: 4px solid $--color-primary;
+}
+
 // end of theme

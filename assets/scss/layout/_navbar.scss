@@ -1,0 +1,41 @@
+.h1-logo {
+  /* for h1 SEO */
+  background: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/053bcf3afe88348b79971d2ea8de28f179cba5c5/week5/logo-ANSWER.svg) left center;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  // width: 151px;
+  height: 40px;
+
+  /* push away */
+  text-indent: 101%;
+  /* avoid more lines */
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.nav {
+  // width: calc(296 / 936 * 100%);
+
+  &-list-item {
+    & .material-symbols-outlined {
+      font-variation-settings:
+        'FILL' 1,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 48;
+
+      &:hover {
+        font-variation-settings:
+          'FILL' 0,
+          'wght' 400,
+          'GRAD' 0,
+          'opsz' 48;
+      }
+    }
+
+    &:hover {
+      color: $--color-gray-600;
+    }
+  }
+}

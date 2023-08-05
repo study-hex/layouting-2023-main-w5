@@ -35,6 +35,11 @@ $max: 20;
 
   // end of padding
 
+  .my-#{$i} {
+    margin-top: $i * 4px;
+    margin-bottom: $i * 4px;
+  }
+
   .mr-#{$i} {
     margin-right: $i * 4px;
   }
