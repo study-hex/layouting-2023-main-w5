@@ -1,4 +1,7 @@
-.header{
-  background: #69F0AE;
-  font-size: 64px;
+.header {
+  height: $--header-height;
+
+  & h2 {
+    margin-right: 50px;
+  }
 }
