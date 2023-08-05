@@ -1,0 +1,14 @@
+/* 
+#NOTES:
+- 584 + 320 + 32 = 936
+- 936 + 30 = 966px
+*/
+
+.container {
+  max-width: 966px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+// end of helpers
