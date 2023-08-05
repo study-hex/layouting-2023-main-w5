@@ -5,6 +5,7 @@
     top: $--header-height;
 
     height: calc(100vh - $--header-height);
+    overflow-y: scroll;
   }
 }
 
@@ -32,3 +33,10 @@
 
 // end of aside
 
+.forum {
+  width: calc(584 / 936 * 100%);
+
+  border-radius: 2px;
+}
+
+// end of forum
