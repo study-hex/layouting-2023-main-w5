@@ -18,20 +18,12 @@
   // width: calc(296 / 936 * 100%);
 
   &-list-item {
-    & .material-symbols-outlined {
+    & .material-symbols-outlined:hover {
       font-variation-settings:
-        'FILL' 1,
+        'FILL' 0,
         'wght' 400,
         'GRAD' 0,
         'opsz' 48;
-
-      &:hover {
-        font-variation-settings:
-          'FILL' 0,
-          'wght' 400,
-          'GRAD' 0,
-          'opsz' 48;
-      }
     }
 
     &:hover {
