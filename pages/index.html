@@ -184,7 +184,8 @@
                     <menu class="flex align-center gap-6 pl-0 list-none">
                       <li>
                         <a href="#" class="flex align-center">
-                          <span class="icon-star material-symbols-outlined font-lg">
+                          <span
+                            class="icon-star material-symbols-outlined font-lg">
                             star
                           </span>
                         </a>
@@ -223,7 +224,8 @@
             </div>
             <!-- end of border-card -->
 
-            <div class="forum-menu pb-8 flex justify-between align-center">
+            <div
+              class="forum-menu relative pb-8 flex justify-between align-center">
               <ul class="flex gap-6 pl-0 list-none">
                 <li>
                   <a href="#" class="flex align-center">
@@ -241,16 +243,110 @@
                 </li>
               </ul>
 
-              <ul class="flex gap-4 pl-0 list-none">
+              <ul class="flex align-center gap-4 pl-0 list-none">
                 <li>
                   <button type="button" class=" btn btn-outline-primary">
                     Mark as read
                   </button>
                 </li>
                 <li>
-                  <button type="button" class="btn btn-primary">
-                    Reply
+                  <button type="button" class="mr-0">
+                    <label for="modal"
+                      class="modal-label btn btn-primary">Reply</label>
                   </button>
+
+                  <input type="checkbox" id="modal">
+                  <!-- <label for="modal" class="modal-label">Reply</label> -->
+
+                  <label for="modal" class="modal-background"></label>
+
+                  <div class="modal">
+                    <div
+                      class="modal-header py-4 pl-6 font-bold border-card-bottom bg-gray-100">
+                      <ul class="flex gap-6 list-none pl-0">
+                        <li>
+                          <a href="#" class="flex align-center gap-2">
+                            Body Text
+                            <span class="material-symbols-outlined font-lg">
+                              expand_more
+                            </span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" class="flex align-center gap-2">
+                            <span class="material-symbols-outlined font-lg">
+                              format_bold
+                            </span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" class="flex align-center gap-2">
+                            <span class="material-symbols-outlined font-lg">
+                              format_italic
+                            </span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" class="flex align-center gap-2">
+                            <span class="material-symbols-outlined font-lg">
+                              format_list_bulleted
+                            </span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" class="flex align-center gap-2">
+                            <span class="material-symbols-outlined font-lg">
+                              format_list_numbered
+                            </span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" class="flex align-center gap-2">
+                            <span class="material-symbols-outlined font-lg">
+                              image
+                            </span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" class="flex align-center gap-2">
+                            <span class="material-symbols-outlined font-lg">
+                              link
+                            </span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" class="flex align-center gap-2">
+                            <span class="material-symbols-outlined font-lg">
+                              code
+                            </span>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <!-- end of modal-header -->
+
+                    <!-- <div class="modal-body"> -->
+                      <textarea class="py-4 px-6" name="modal-textarea"
+                        id="modal-textarea" cols="30" rows="10"
+                        placeholder="Reply an answer…"></textarea>
+                    <!-- </div> -->
+
+                    <div class="modal-footer py-4 px-6 gap-2 bg-white">
+                      <button type="button" class=" btn btn-primary">
+                        Reply
+                      </button>
+
+                      <button type="button">
+                        <label for="modal"
+                          class="modal-footer-btn btn btn-outline-primary">
+                          Cancel
+                        </label>
+                      </button>
+                    </div>
+                    <!-- end of modal-footer -->
+                  </div>
+                  <!-- end of modal -->
+
                 </li>
               </ul>
             </div>

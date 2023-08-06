@@ -1,5 +1,5 @@
 * {
-  outline: 1px solid #f73;
+  // outline: 1px solid #f73;
 }
 
 *,
@@ -44,9 +44,27 @@ a:hover {
   opacity: 0.8;
 }
 
-input[type="button"],
 button {
+  background-color: transparent;
+}
+
+input[type="button"],
+button,
+textarea {
   border: none;
+  outline: none;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+label {
+  cursor: pointer;
+}
+
+textarea {
+  resize: none;
 }
 
 span.material-symbols-outlined {

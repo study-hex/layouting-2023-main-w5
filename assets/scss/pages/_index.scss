@@ -56,3 +56,123 @@
 }
 
 // end of forum
+
+input[id="modal"]:not(:checked) {
+
+  ~.modal,
+  ~.modal-background {
+    opacity: 0;
+    transition: opacity 0.3s linear;
+    // animation: hide 0.3s linear;
+  }
+}
+
+input[id="modal"]:checked {
+
+  ~.modal,
+  ~.modal-background {
+    // display: block;
+    display: flex;
+    flex-direction: column;
+    opacity: 1;
+  }
+}
+
+.modal-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  display: none;
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9998;
+}
+
+.modal {
+  position: absolute;
+  // position: fixed;
+  // top: 0;
+  // left: 0;
+  right: 0;
+  bottom: 40%;
+
+  display: none;
+  width: 100%;
+  height: 300%;
+  margin: auto;
+
+  border-radius: 2px;
+  z-index: 9999;
+
+  // &-body {
+  // padding: 15px;
+  // margin: 0;
+  // margin-top: auto;
+  // flex-grow: 1;
+  // }
+
+  &-header {
+    // height: 50px;
+
+    border-radius: 2px 2px 0px 0px;
+
+    &-title {
+      display: inline-block;
+      margin: 0;
+      padding-left: 15px;
+      line-height: 50px;
+    }
+
+    label {
+      float: right;
+      padding: 0 15px;
+      line-height: 50px;
+
+      &:hover img {
+        opacity: 0.6;
+      }
+    }
+  }
+
+  &-footer {
+    // height: 60px;
+    display: flex;
+    flex-direction: row-reverse;
+    // padding: 15px;
+    border-radius: 0px 0px 2px 2px;
+  }
+}
+
+.modal {
+  // transition: opacity 0.3s linear;
+  animation: show 0.3s linear;
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+    transform: scale(0);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+// @keyframes hide {
+//   from {
+//     opacity: 1;
+//     transform: scale(1);
+//   }
+
+//   to {
+//     opacity: 0;
+//     transform: scale(0);
+//   }
+// }
+
+// end of modal-editor
