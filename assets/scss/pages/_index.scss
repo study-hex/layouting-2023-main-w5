@@ -39,6 +39,7 @@
   border-radius: 2px;
 
   & .icon-star {
+    transition: all .5s linear;
     font-variation-settings:
       'FILL' 0,
       'wght' 400,
@@ -46,6 +47,7 @@
       'opsz' 48;
 
     &:hover {
+      transform: scale(1.02);
       font-variation-settings:
         'FILL' 1,
         'wght' 400,
@@ -53,6 +55,15 @@
         'opsz' 48;
     }
   }
+}
+
+#input-star:checked~label>.material-symbols-outlined {
+  color: $--color-primary;
+  font-variation-settings:
+    'FILL' 1,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48;
 }
 
 // end of forum
