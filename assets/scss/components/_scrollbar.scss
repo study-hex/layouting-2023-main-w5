@@ -1,0 +1,29 @@
+body {
+  // #NOTES: for Firefox
+  /* "auto" or "thin" */
+  scrollbar-width: thin;
+  /* scroll thumb and track */
+  scrollbar-color: $--color-primary $--color-gray-100;
+}
+
+
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+  // box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 0 6px $--color-gray-100;
+}
+
+::-webkit-scrollbar-thumb {
+  border: 1px solid $--color-gray-100;
+  border-radius: 12px;
+  background-color: $--color-primary;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  box-shadow: inset 0 0 4px $--color-gray-400;
+}
+
+// end of scrollbar
