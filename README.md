@@ -8,6 +8,10 @@
 
 > <https://xd.adobe.com/view/456141fc-d0a0-44d4-93ad-6ab54a4b5351-1032/grid>
 
+- 圖片倉庫
+
+> <https://github.com/hexschool/2022-web-layout-training/tree/main/week5>
+
 ---
 
 ## LV.1
@@ -19,11 +23,16 @@ LV1：做 1 頁版型
 ### NOTES
 
 - 嘗試以 `Normalize.css` 作為 `reset`
+
+#### modal
+
 - 用 `input`、`label` 來製作星星符號、`modal`
+
+> <https://codepen.io/NoNameNote/pen/OJaqdJK>
 
 #### 彈出效果
 
-> 隱藏好像無法只用 `CSS`，可能要搭配 `JS`（？）
+> 縮回效果好像無法只用 `CSS`，可能要搭配 `JS`（？）
 
 ```CSS
 .modal {
@@ -41,6 +50,16 @@ LV1：做 1 頁版型
     transform: scale(1);
   }
 }
+```
+
+#### 裁切多餘文字
+
+- 自動用 `...` 取代呈現
+
+```CSS
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 ```
 
 ### SCSS
