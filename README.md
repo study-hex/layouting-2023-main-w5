@@ -75,8 +75,8 @@ LV1：做 1 頁版型
 
 ### Screenshots
 
-![Screenshot_index](./assets/images/Screenshot_index.png =250x)
-![Screenshot_index-modal.png](./assets/images/Screenshot_index-modal.png =250x)
+![Screenshot_index](./assets/images/Screenshot_index.png)
+![Screenshot_index-modal.png](./assets/images/Screenshot_index-modal.png)
 
 ---
 
